@@ -484,38 +484,32 @@
                 <div class="lg:col-span-7 bg-gray-50 p-8 rounded-lg border border-gray-100 shadow-sm">
                     <form action="https://formspree.io/f/your_form_id" method="POST" class="space-y-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                         <form action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="9d8ceb98-57c6-4934-b9de-d4c242b72541">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Submit</button>
-</form>
-                            <div class="space-y-1">
-                                <label for="name" class="text-xs font-bold text-gray-700 block">نام و نام خانوادگی</label>
-                                <input type="text" id="name" name="name" required placeholder="مثال: علی رضایی" 
-                                       class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm transition-colors">
-                            </div>
-                            <div class="space-y-1">
-                                <label for="email" class="text-xs font-bold text-gray-700 block">پست الکترونیکی (ایمیل)</label>
-                                <input type="email" id="email" name="email" required placeholder="example@gmail.com" 
-                                       class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm transition-colors text-left dir-ltr">
-                            </div>
-                        </div>
-                        <div class="space-y-1">
-                            <label for="subject" class="text-xs font-bold text-gray-700 block">موضوع پیام</label>
-                            <input type="text" id="subject" name="subject" required placeholder="مثال: پرسش علمی یا درخواست راهنمایی" 
-                                   class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm transition-colors">
-                        </div>
-                        <div class="space-y-1">
-                            <label for="message" class="text-xs font-bold text-gray-700 block">متن پیام علمی شما</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="متن پرسش یا درخواست تان را با تمام جزئیات بنویسید..." 
-                                      class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm transition-colors resize-none"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-katebGreen hover:bg-katebDark text-white font-bold text-sm py-3 rounded shadow transition-all flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-paper-plane text-xs"></i> ارسال پیام
-                        </button>
-                    </form>
+                         <!-- خط ۴۸۵: تغییر اکشن فرم به Web3Forms -->
+<form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+    
+    <!-- خط ۴۸۸: قرار دادن کلید دسترسی به صورت مخفی (حتماً این خط را اضافه کنید) -->
+    <input type="hidden" name="access_key" value="9d8ceb98-57c6-4934-b9de-d4c242b72541">
+
+    <!-- بخش فیلدهای موجود شما (نام، ایمیل، موضوع و متن پیام) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- فیلد نام و نام خانوادگی که در خطوط ۴۹۴ تا ۴۹۷ تصویر دیده می‌شود -->
+        <div class="space-y-1">
+            <label for="name" class="text-xs font-bold text-gray-700 block">نام و نام خانوادگی</label>
+            <input type="text" id="name" name="name" required placeholder="مثال: علی رضایی" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm transition-colors">
+        </div>
+
+        <!-- فیلد ایمیل که در خطوط ۴۹۹ تا ۵۰۲ تصویر دیده می‌شود -->
+        <div class="space-y-1">
+            <label for="email" class="text-xs font-bold text-gray-700 block">پست الکترونیکی (ایمیل)</label>
+            <input type="type" id="email" name="email" required placeholder="example@gmail.com" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm transition-colors text-left dir-ltr">
+        </div>
+    </div>
+
+    <!-- مابقی فیلدها مانند موضوع و پیام (textarea) که قبلاً در قالب خود داشتید در این قسمت قرار می‌گیرند -->
+
+    <!-- در نهایت، دکمه ارسال فرم شما و سپس بستن تگ فرم در انتهای کلیدها -->
+    <button type="submit" class="...">ارسال پیام</button>
+                  </form>
                 </div>
             </div>
         </div>
