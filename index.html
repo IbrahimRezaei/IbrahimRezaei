@@ -479,32 +479,42 @@
                         </div>
                     </div>
                 </div>
-
-        <div class="lg:col-span-7 bg-gray-50 p-8 rounded-lg border border-gray-100 shadow-sm">
+<div class="lg:col-span-7 bg-gray-50 p-8 rounded-lg border border-gray-100 shadow-sm">
     
     <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
         <input type="hidden" name="access_key" value="a4001bb4-0533-4ab2-be53-53c40da4e82c">
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="space-y-1">
-                <label for="name" class="text-xs font-bold text-gray-700 block">نام و نام خانوادگی</label>
-                <input type="text" id="name" name="name" required placeholder="مثال: علی رضایی" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen">
+                <label for="name" class="text-xs font-bold text-gray-700 block mb-1">نام و نام خانوادگی</label>
+                <input type="text" id="name" name="name" required placeholder="مثال: علی رضایی" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm">
             </div>
             
             <div class="space-y-1">
-                <label for="email" class="text-xs font-bold text-gray-700 block">پست الکترونیکی (ایمیل)</label>
-                <input type="email" id="email" name="email" required placeholder="example@gmail.com" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen">
+                <label for="email" class="text-xs font-bold text-gray-700 block mb-1">(ایمیل) پست الکترونیکی</label>
+                <input type="email" id="email" name="email" required placeholder="example@gmail.com" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm">
             </div>
         </div>
 
         <div class="space-y-1">
-            <label for="subject" class="text-xs font-bold text-gray-700 block">موضوع</label>
-            <input type="text" id="subject" name="subject" required placeholder="موضوع پیام شما" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen">
+            <label for="subject" class="text-xs font-bold text-gray-700 block mb-1">موضوع</label>
+            <input type="text" id="subject" name="subject" required placeholder="موضوع پیام" class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm">
         </div>
 
         <div class="space-y-1">
-            <label for="message" class="text-xs font-bold text-gray-700 block">متن پیام</label>
-            <textarea id="message" name="message" rows="4" required placeholder="پیام خود را اینجا بنویسید..." class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen"></textarea>
+            <label for="message" class="text-xs font-bold text-gray-700 block mb-1">متن پیام</label>
+            <textarea id="message" name="message" rows="5" required placeholder="متن پیام خود را اینجا بنویسید..." class="w-full px-4 py-2.5 bg-white border border-gray-200 rounded focus:outline-none focus:border-katebGreen text-sm resize-none"></textarea>
+        </div>
+
+        <div class="pt-2">
+            <button type="submit" class="w-full bg-katebGreen text-white font-medium py-2.5 rounded hover:bg-opacity-90 transition text-sm cursor-pointer">
+                ارسال پیام
+            </button>
+        </div>
+
+    </form>
+</div>
+
         </div>
 
         <button type="submit" class="w-full bg-katebGreen text-white font-medium py-2.5 rounded hover:bg-opacity-90 transition">
